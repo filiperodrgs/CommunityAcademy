@@ -1,0 +1,275 @@
+<html><head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+    
+    .bgimg {
+      background-position: center;
+      background-size:cover;
+      background-image: url("/resources/logo.jpeg");
+      min-height: 58%;
+    }
+    
+    .menu {
+      display: none;
+    }
+
+    #prof-column{
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #prof-title{
+        padding-bottom:30px;
+    }
+
+    #prof-1{
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+
+    #prof-2{
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+
+    #prof-3{
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+
+
+    #student-column{
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #student-title{
+        padding-bottom:30px;
+    }
+
+    #student-1{
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+
+    #student-2{
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+
+    #student-3{
+        padding-right: 20px;
+        padding-bottom:20px;
+    }
+
+
+
+
+    </style>
+    
+    </head>
+    <body>
+    
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+          <div class="w3-col s3">
+            <a href="#home" class="w3-button w3-block w3-black"><img src="/resources/home.jpg"></a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#about" class="w3-button w3-block w3-black"><img src="/resources/About.jpg"></a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#menu" class="w3-button w3-block w3-black"><img src="/resources/specialButton.jpg"></a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#where" class="w3-button w3-block w3-black"><img src="/resources/Experience.jpg"></a>
+          </div>
+        </div>
+      </div>
+    
+    <!-- Header with image -->
+    <header class="bgimg w3-display-container" id="home">
+      <div class="w3-display-middle w3-center">
+        <span class="w3-text-white" style="font-size:90px"></span>
+      </div>
+    </header>
+    
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-large">
+    
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+        <p>We are the “Specials”. We are not dumb. That’s what a dumb person would say. We just take 5 minutes to answer 2+2 and that’s okay.</p>
+        <p>Here we provide a “special” place for all the “specials” out there. Are you a wannabe lawyer who was found out? Join us and be “Special”. Are you a poser social activist? Join us and be “Special”. Are you a racist elderly millionaire? Join us and be “Special”!</p>
+        <!-- <div class="w3-panel w3-leftbar w3-light-grey">
+          <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+          <p>Chef, Coffeeist and Owner: Liam Brown</p>
+        </div> -->
+        <img src="/resources/sala.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+      </div>
+    </div>
+    
+    <!-- Menu Container -->
+    <div class="w3-container" id="menu">
+      <div class="w3-content" style="max-width:700px">
+     
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Our "Special" Community</span></h5>
+      
+        <div class="w3-row w3-center w3-card w3-padding" style="max-width: 700px;">
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Students');" id="myLink">
+            <div class="w3-col s6 tablink w3-dark-grey">Alumni</div>
+          </a>
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Professors');">
+            <div class="w3-col s6 tablink">Professors</div>
+          </a>
+        </div>
+    
+        <div id="Students" class="w3-container menu w3-padding-48 w3-card" style="display: block;">
+            <h7 id="prof-title">Find out about our “Failure” program and other alumni students experience:</h7>
+
+            <div id="prof-column">
+            <div> 
+                <img id="prof-1" src="/resources/rolo.jpeg" ALIGN="left" />
+                <h5>José Hawthorne</h5> <br>
+                 <p>Aside from being a formidable student, he is also a moist towelette tycoon, who owns his own award winning company of moist towelettes. He also indulges into oblivious sexist and racist comments.
+
+                  </div>
+                  <div> 
+                    <img id="prof-2"src="/resources/rolo.jpeg" ALIGN="left"/>
+                      <h5>Annie Cruz</h5> <br>
+                    <p>Is our most successful student with a heavy addiction to Adderall.</p>
+                    <p>Currently she is doing an internship in the FBI.            </p>          
+                      </div>
+                      <div> 
+                        <img id="prof-3"src="/resources/rolo.jpeg" ALIGN="left"/>
+                          <h5>Jeff Costa</h5> <br>
+                          Was caught with no lawyer degree, which made him enrolled in our dear community. Due to his experience as a former “lawyer”, the Dean and Señor Rodrigues seek help from him, clearly highlighting our student’s brilliance.
+
+                          </div>
+                    
+                    </div>
+        </div>
+    
+        <div id="Professors" class="w3-container menu w3-padding-48 w3-card" style="display: none;">
+            <h7 id="prof-title">The “best” teachers are here to each to be “special”. Check them out and who knows, you can be the next “Failure”:</h7>
+
+            <div id="prof-column">
+            <div> 
+                <img id="prof-1" src="/resources/rolo.jpeg" ALIGN="left" />
+                <h5>Dean Craig Silva</h5> <br>
+                The leader of our “Special” Community. He has a fictional degree in Education and will ask the students for small favours.
+                  </div>
+                  <div> 
+                    <img id="prof-2"src="/resources/rolo.jpeg" ALIGN="left"/>
+                      <h5>Señor Rodrigues</h5> <br>
+                      Is a “unhinged” Spanish teacher with no teaching qualifications, and who has also signed up recently to be a “special” student.
+                      </div>
+                      <div> 
+                        <img id="prof-3"src="/resources/rolo.jpeg" ALIGN="left"/>
+                          <h5>Prof. Ian Texeira</h5> <br>
+                  Is a psychology teacher who hates Señor Rodrigues, and will do anything to con Costa out of his Lexus.
+                          </div>
+                    
+                    </div>
+                </div>
+      </div>
+    </div>
+
+    <div class="w3-container" id="menu">
+        <div class="w3-content" style="max-width:700px">
+       
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCES</span></h5>
+        
+          <div class="w3-row w3-center w3-card w3-padding" style="max-width: 700px;">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Study');" id="studyLink">
+              <div class="w3-col s6 tablink w3-dark-grey">Study Group</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Dinner');">
+              <div class="w3-col s6 tablink">Don't eat alone</div>
+            </a>
+          </div>
+
+
+          <div id="Study" class="w3-container menu w3-padding-48 w3-card" style="display: block;">
+            <h7 id="prof-title">Are you striving to enter the “Failure” program? Take a look at our study group feature so you can team-up with other “specials”, so together you can reach your goals!
+            </h7>
+
+        </div>
+    
+        <div id="Dinner" class="w3-container menu w3-padding-48 w3-card" style="display: none;">
+            <h7 id="student-title">Eating alone can get lonely. Group up with other “specials” and have a big “special” get together! Fill the form so you can get paired with “specials” like you.</h7>
+
+                </div>
+      </div>
+    </div>
+
+
+
+    
+    <!-- Contact/Area Container -->
+    <div class="w3-container" id="where" style="padding-bottom:32px;">
+      <div class="w3-content" style="max-width:700px">
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCES</span></h5>
+        <p>Find us at some address at some place.</p>
+        <img src="/w3images/map.jpg" class="w3-image" style="width:100%">
+        <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+        <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required="" name="Name"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required="" name="People"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required="" name="date" value="2020-11-16T20:00"></p>
+          <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required="" name="Message"></p>
+          <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+        </form>
+      </div>
+    </div>
+    
+    <!-- End page content -->
+    </div>
+    
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
+    </footer>
+    
+    <script>
+    // Tabbed Menu
+    function openMenu(evt, menuName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("menu");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+      }
+      document.getElementById(menuName).style.display = "block";
+      evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+    }
+    document.getElementById("myLink").click();
+
+
+
+    
+
+    </script>
+    
+    
+    </body>
+    </html>
